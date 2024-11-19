@@ -1,4 +1,4 @@
-package com.sclevin.flutter_music_player
+package com.sclevin.hi_music
 
 import io.flutter.embedding.android.FlutterActivity
 

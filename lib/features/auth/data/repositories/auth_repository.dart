@@ -1,4 +1,4 @@
-import 'package:flutter_music_player/core/services/i_api_service.dart';
+import 'package:hi_music/core/services/i_api_service.dart';
 
 import '../../domain/entities/user.dart';
 import '../../domain/repositories/i_auth_repostory.dart';

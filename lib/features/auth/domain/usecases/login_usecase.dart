@@ -1,5 +1,5 @@
-import 'package:flutter_music_player/features/auth/domain/entities/user.dart';
-import 'package:flutter_music_player/features/auth/domain/repositories/i_auth_repostory.dart';
+import 'package:hi_music/features/auth/domain/entities/user.dart';
+import 'package:hi_music/features/auth/domain/repositories/i_auth_repostory.dart';
 
 
 class LoginUseCase {
