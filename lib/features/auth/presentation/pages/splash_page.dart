@@ -1,5 +1,10 @@
+import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:hi_music/app/routers.dart';
+import 'package:hi_music/app/routers.gr.dart';
 
+@RoutePage()
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
 
@@ -35,7 +40,9 @@ class SplashPage extends StatelessWidget {
             ),
             const Spacer(flex: 3),
             TextButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                context.replaceRoute(LoginRoute());
+              },
               icon: const Text("Skip"),
               label: const Icon(
                 Icons.arrow_forward_ios,
