@@ -15,7 +15,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      color: Colors.white,
+      color: Theme.of(context).primaryColor,
       shape: const CircularNotchedRectangle(),
       notchMargin: 12,
       child: Row(
@@ -29,7 +29,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               widget.onTap(selectedIndex);
             },
             icon: const Icon(Icons.search_outlined),
-            color: selectedIndex == 0 ? Colors.blue : Colors.black,
+            color: selectedIndex == 0 ? Theme.of(context).highlightColor : Theme.of(context).disabledColor,
           ),
 
           const SizedBox(),
@@ -42,7 +42,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
               widget.onTap(selectedIndex);
             },
             icon: const Icon(Icons.person_outline),
-            color: selectedIndex == 1 ? Colors.blue : Colors.black,
+            color: selectedIndex == 1 ? Theme.of(context).highlightColor : Theme.of(context).disabledColor,
+
           )
         ],
       ),

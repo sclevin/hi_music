@@ -8,12 +8,12 @@ final themeProvider = StateNotifierProvider<ThemeNotifier, ThemeData>((ref) {
 
 // 2. 定义主题状态
 class ThemeNotifier extends StateNotifier<ThemeData> {
-  ThemeNotifier() : super(lightTheme);
+  ThemeNotifier() : super(darkTheme);
 
   static final lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    primaryColorLight: Colors.black,
+    primaryColorLight: Colors.white,
     textTheme: TextTheme(
       bodySmall: TextStyle(color: Colors.black54),
       bodyMedium: TextStyle(color: Colors.black54),
@@ -24,12 +24,12 @@ class ThemeNotifier extends StateNotifier<ThemeData> {
 
   static final darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primaryColor: Colors.blueGrey,
-    primaryColorDark: Colors.white,
+    primaryColor: Colors.black54,
+    scaffoldBackgroundColor: Colors.grey,
+    disabledColor: Colors.white,
+    highlightColor: Colors.green,
     textTheme: TextTheme(
-      bodySmall: TextStyle(color: Colors.white),
-      bodyMedium: TextStyle(color: Colors.white),
-      bodyLarge: TextStyle(color: Colors.white),
+      labelMedium: TextStyle(color: Colors.white),
     ),
     // 其他自定义属性
   );
